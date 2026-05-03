@@ -1,0 +1,7 @@
+com/example/library/model/io/xpp3/LibraryXpp3Writer.class
+com/example/App.class
+com/example/library/model/io/xpp3/LibraryXpp3Reader$1.class
+com/example/library/model/io/xpp3/LibraryXpp3Reader$ContentTransformer.class
+com/example/library/model/io/xpp3/LibraryXpp3Reader.class
+com/example/library/model/Library.class
+com/example/library/model/Book.class

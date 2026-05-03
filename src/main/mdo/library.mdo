@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<model xmlns="http://codehaus-plexus.github.io/MODELLO/2.0.0"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://codehaus-plexus.github.io/MODELLO/2.0.0 http://codehaus-plexus.github.io/modello/xsd/modello-2.0.0.xsd">
+    <id>library</id>
+    <name>Library</name>
+    <description>A simple library model used to demonstrate Modello code generation.</description>
+    <defaults>
+        <default>
+            <key>package</key>
+            <value>com.example.library.model</value>
+        </default>
+    </defaults>
+    <classes>
+        <class rootElement="true" xml.tagName="library">
+            <name>Library</name>
+            <version>1.0.0</version>
+            <fields>
+                <field>
+                    <name>name</name>
+                    <version>1.0.0</version>
+                    <type>String</type>
+                </field>
+                <field>
+                    <name>books</name>
+                    <version>1.0.0</version>
+                    <association>
+                        <type>Book</type>
+                        <multiplicity>*</multiplicity>
+                    </association>
+                </field>
+            </fields>
+        </class>
+        <class>
+            <name>Book</name>
+            <version>1.0.0</version>
+            <fields>
+                <field>
+                    <name>title</name>
+                    <version>1.0.0</version>
+                    <type>String</type>
+                    <required>true</required>
+                </field>
+                <field>
+                    <name>author</name>
+                    <version>1.0.0</version>
+                    <type>String</type>
+                </field>
+                <field>
+                    <name>isbn</name>
+                    <version>1.0.0</version>
+                    <type>String</type>
+                </field>
+            </fields>
+        </class>
+    </classes>
+</model>
